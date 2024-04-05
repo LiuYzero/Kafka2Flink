@@ -1,0 +1,66 @@
+2024-04-03 20:59:24.299 [main] INFO  c.l.KafkaProducter.KafkaProducterApplicationTests - Starting KafkaProducterApplicationTests using Java 21.0.2 with PID 32476 (started by LiuYang in D:\x\KafkaProducter)
+2024-04-03 20:59:24.300 [main] INFO  c.l.KafkaProducter.KafkaProducterApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-04-03 20:59:24.988 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=70935f47-9b94-367b-82c3-2f6941f00d36
+2024-04-03 20:59:26.745 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-04-03 20:59:26.769 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-04-03 20:59:27.776 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-04-03 20:59:27.826 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-04-03 20:59:27.934 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-04-03 20:59:27.939 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-04-03 20:59:27.960 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-04-03 20:59:27.960 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-04-03 20:59:27.960 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-04-03 20:59:27.960 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2024-04-03 20:59:27.960 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-04-03 20:59:27.960 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-04-03 20:59:27.960 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-04-03 20:59:28.537 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2024-04-03 20:59:28.540 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-04-03 20:59:28.542 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-03 20:59:28.545 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1712149168545 with initial instances count: 3
+2024-04-03 20:59:28.549 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application KAFKAPRODUCTER with eureka with status UP
+2024-04-03 20:59:28.550 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1712149168550, current=UP, previous=STARTING]
+2024-04-03 20:59:28.551 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_KAFKAPRODUCTER/KafkaProducter: registering service...
+2024-04-03 20:59:28.558 [main] INFO  c.l.KafkaProducter.KafkaProducterApplicationTests - Started KafkaProducterApplicationTests in 5.637 seconds (process running for 6.39)
+2024-04-03 20:59:28.597 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_KAFKAPRODUCTER/KafkaProducter - registration status: 204
+2024-04-03 20:59:29.314 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application KAFKAPRODUCTER with eureka with status DOWN
+2024-04-03 20:59:29.314 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1712149169314, current=DOWN, previous=UP]
+2024-04-03 20:59:29.314 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_KAFKAPRODUCTER/KafkaProducter: registering service...
+2024-04-03 20:59:29.319 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-04-03 20:59:29.607 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_KAFKAPRODUCTER/KafkaProducter - registration status: 204
+2024-04-03 20:59:29.609 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-04-03 20:59:29.618 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_KAFKAPRODUCTER/KafkaProducter - deregister  status: 200
+2024-04-03 20:59:29.621 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-04-03 21:11:01.996 [main] INFO  c.l.KafkaProducter.KafkaProducterApplicationTests - Starting KafkaProducterApplicationTests using Java 21.0.2 with PID 30132 (started by LiuYang in D:\x\KafkaProducter)
+2024-04-03 21:11:01.998 [main] INFO  c.l.KafkaProducter.KafkaProducterApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2024-04-03 21:11:02.732 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=70935f47-9b94-367b-82c3-2f6941f00d36
+2024-04-03 21:11:04.534 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-04-03 21:11:04.561 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-04-03 21:11:05.580 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-04-03 21:11:05.627 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-04-03 21:11:05.717 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-04-03 21:11:05.722 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-04-03 21:11:05.745 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-04-03 21:11:05.745 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-04-03 21:11:05.746 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-04-03 21:11:05.746 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2024-04-03 21:11:05.746 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-04-03 21:11:05.746 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-04-03 21:11:05.746 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-04-03 21:11:06.415 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2024-04-03 21:11:06.417 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-04-03 21:11:06.419 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-03 21:11:06.424 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1712149866423 with initial instances count: 3
+2024-04-03 21:11:06.427 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application KAFKAPRODUCTER with eureka with status UP
+2024-04-03 21:11:06.429 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1712149866429, current=UP, previous=STARTING]
+2024-04-03 21:11:06.430 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_KAFKAPRODUCTER/KafkaProducter: registering service...
+2024-04-03 21:11:06.437 [main] INFO  c.l.KafkaProducter.KafkaProducterApplicationTests - Started KafkaProducterApplicationTests in 5.83 seconds (process running for 6.608)
+2024-04-03 21:11:06.470 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_KAFKAPRODUCTER/KafkaProducter - registration status: 204
+2024-04-03 21:11:07.103 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application KAFKAPRODUCTER with eureka with status DOWN
+2024-04-03 21:11:07.104 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1712149867104, current=DOWN, previous=UP]
+2024-04-03 21:11:07.104 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_KAFKAPRODUCTER/KafkaProducter: registering service...
+2024-04-03 21:11:07.108 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-04-03 21:11:07.194 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_KAFKAPRODUCTER/KafkaProducter - registration status: 204
+2024-04-03 21:11:07.196 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-04-03 21:11:07.208 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_KAFKAPRODUCTER/KafkaProducter - deregister  status: 200
+2024-04-03 21:11:07.211 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

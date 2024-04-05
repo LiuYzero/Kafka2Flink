@@ -1,0 +1,24 @@
+server:
+  port: 20000
+spring:
+  application:
+    name: KafkaProducter
+  kafka:
+    bootstrap-servers: 192.168.1.109:9092
+    consumer:
+      group-id: kafka-product
+      auto-offset-reset: earliest
+    template:
+      default-topic: espiot
+logging:
+  config: classpath:logback-spring.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.113:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}
+

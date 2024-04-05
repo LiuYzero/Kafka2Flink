@@ -1,0 +1,165 @@
+2024-04-02 22:44:44.776 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - Starting IotgatewayMqttconsumerEspiotApplication using Java 1.8.0_402-402 on DESKTOP-TCG6FB3 with PID 13788 (D:\x\mqtt2kafka\target\classes started by LiuYa in D:\x\mqtt2kafka)
+2024-04-02 22:44:44.780 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-02 22:44:45.697 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2024-04-02 22:44:45.721 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2024-04-02 22:44:45.822 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=3d944a91-0dc5-386a-b9d7-bb23502a6aae
+2024-04-02 22:44:46.420 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+2024-04-02 22:44:46.428 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2024-04-02 22:44:46.430 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-02 22:44:46.430 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2024-04-02 22:44:46.581 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-02 22:44:46.582 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1746 ms
+2024-04-02 22:44:47.588 [main] INFO  com.liuyang.mqtt2kafka.config.MqttConfig - =====================
+2024-04-02 22:44:48.411 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 22:44:48.477 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"temperature": "27", "source_device": "esp0002", "humidity": "74", "target_device": "server", "msg_type": "ReportTempHumi"}
+2024-04-02 22:44:48.900 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-04-02 22:44:49.395 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2024-04-02 22:44:49.395 [main] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'Mqtt2Kafka.errorChannel' has 1 subscriber(s).
+2024-04-02 22:44:49.395 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2024-04-02 22:44:49.400 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2024-04-02 22:44:49.424 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 61155 (http) with context path ''
+2024-04-02 22:44:49.426 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 61155
+2024-04-02 22:44:49.431 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-04-02 22:44:49.541 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-04-02 22:44:49.549 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-04-02 22:44:49.582 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-04-02 22:44:49.583 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-04-02 22:44:49.583 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-04-02 22:44:49.583 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2024-04-02 22:44:49.583 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-04-02 22:44:49.583 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-04-02 22:44:49.583 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-04-02 22:44:50.124 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0004", "msg_type": "ReportDistance", "distance": "347.92", "target_device": "server"}
+2024-04-02 22:44:50.262 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2024-04-02 22:44:50.272 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-04-02 22:44:50.282 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-02 22:44:50.303 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1712069090298 with initial instances count: 3
+2024-04-02 22:44:50.312 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application MQTT2KAFKA with eureka with status UP
+2024-04-02 22:44:50.315 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1712069090315, current=UP, previous=STARTING]
+2024-04-02 22:44:50.325 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MQTT2KAFKA/Mqtt2Kafka: registering service...
+2024-04-02 22:44:50.614 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - Started IotgatewayMqttconsumerEspiotApplication in 6.887 seconds (JVM running for 7.498)
+2024-04-02 22:44:50.623 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MQTT2KAFKA/Mqtt2Kafka - registration status: 204
+2024-04-02 22:44:51.570 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 22:44:52.349 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"temperature": "27", "source_device": "esp0002", "humidity": "74", "target_device": "server", "msg_type": "ReportTempHumi"}
+2024-04-02 22:44:52.967 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0004", "msg_type": "ReportDistance", "distance": "347.56", "target_device": "server"}
+2024-04-02 22:44:54.398 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 22:44:55.971 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"temperature": "27", "source_device": "esp0002", "humidity": "74", "target_device": "server", "msg_type": "ReportTempHumi"}
+2024-04-02 22:44:56.034 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0004", "msg_type": "ReportDistance", "distance": "186.71", "target_device": "server"}
+2024-04-02 22:44:57.870 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 22:44:59.203 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0004", "msg_type": "ReportDistance", "distance": "347.16", "target_device": "server"}
+2024-04-02 22:44:59.433 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"temperature": "27", "source_device": "esp0002", "humidity": "74", "target_device": "server", "msg_type": "ReportTempHumi"}
+2024-04-02 22:45:00.644 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 22:45:02.179 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0004", "msg_type": "ReportDistance", "distance": "348.33", "target_device": "server"}
+2024-04-02 22:45:03.109 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"temperature": "27", "source_device": "esp0002", "humidity": "74", "target_device": "server", "msg_type": "ReportTempHumi"}
+2024-04-02 22:45:03.504 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 22:45:05.255 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0004", "msg_type": "ReportDistance", "distance": "286.6", "target_device": "server"}
+2024-04-02 22:45:06.489 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 22:45:06.539 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"temperature": "27", "source_device": "esp0002", "humidity": "74", "target_device": "server", "msg_type": "ReportTempHumi"}
+2024-04-02 22:45:07.910 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0004", "msg_type": "ReportDistance", "distance": "346.71", "target_device": "server"}
+2024-04-02 22:45:09.650 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 22:45:09.803 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"temperature": "27", "source_device": "esp0002", "humidity": "74", "target_device": "server", "msg_type": "ReportTempHumi"}
+2024-04-02 22:45:10.898 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0004", "msg_type": "ReportDistance", "distance": "235.01", "target_device": "server"}
+2024-04-02 22:45:12.490 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 22:45:13.946 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"temperature": "27", "source_device": "esp0002", "humidity": "73", "target_device": "server", "msg_type": "ReportTempHumi"}
+2024-04-02 22:45:14.000 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0004", "msg_type": "ReportDistance", "distance": "347.8", "target_device": "server"}
+2024-04-02 22:45:15.188 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application MQTT2KAFKA with eureka with status DOWN
+2024-04-02 22:45:15.189 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1712069115189, current=DOWN, previous=UP]
+2024-04-02 22:45:15.189 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MQTT2KAFKA/Mqtt2Kafka: registering service...
+2024-04-02 22:45:15.376 [SpringApplicationShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2024-04-02 22:45:15.377 [SpringApplicationShutdownHook] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'Mqtt2Kafka.errorChannel' has 0 subscriber(s).
+2024-04-02 22:45:15.378 [SpringApplicationShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2024-04-02 22:45:15.389 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MQTT2KAFKA/Mqtt2Kafka - registration status: 204
+2024-04-02 22:45:15.392 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-04-02 22:45:15.401 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 22:45:17.229 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"temperature": "27", "source_device": "esp0002", "humidity": "74", "target_device": "server", "msg_type": "ReportTempHumi"}
+2024-04-02 22:45:17.461 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0004", "msg_type": "ReportDistance", "distance": "348.4", "target_device": "server"}
+2024-04-02 22:45:18.409 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-04-02 22:45:18.604 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 22:45:18.604 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MQTT2KAFKA/Mqtt2Kafka - deregister  status: 200
+2024-04-02 22:45:18.609 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-04-02 22:53:56.041 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - Starting IotgatewayMqttconsumerEspiotApplication using Java 1.8.0_402-402 on DESKTOP-TCG6FB3 with PID 16432 (D:\x\mqtt2kafka\target\classes started by LiuYa in D:\x\mqtt2kafka)
+2024-04-02 22:53:56.046 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-02 22:55:55.708 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - Starting IotgatewayMqttconsumerEspiotApplication using Java 1.8.0_402-402 on DESKTOP-TCG6FB3 with PID 10332 (D:\x\mqtt2kafka\target\classes started by LiuYa in D:\x\mqtt2kafka)
+2024-04-02 22:55:55.712 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-02 22:59:05.512 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - Starting IotgatewayMqttconsumerEspiotApplication using Java 1.8.0_402-402 on DESKTOP-TCG6FB3 with PID 13652 (D:\x\mqtt2kafka\target\classes started by LiuYa in D:\x\mqtt2kafka)
+2024-04-02 22:59:05.517 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-02 23:02:15.373 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - Starting IotgatewayMqttconsumerEspiotApplication using Java 1.8.0_402-402 on DESKTOP-TCG6FB3 with PID 10136 (D:\x\mqtt2kafka\target\classes started by LiuYa in D:\x\mqtt2kafka)
+2024-04-02 23:02:15.378 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-02 23:04:05.189 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - Starting IotgatewayMqttconsumerEspiotApplication using Java 1.8.0_402-402 on DESKTOP-TCG6FB3 with PID 12980 (D:\x\mqtt2kafka\target\classes started by LiuYa in D:\x\mqtt2kafka)
+2024-04-02 23:04:05.194 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-02 23:05:16.166 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - Starting IotgatewayMqttconsumerEspiotApplication using Java 1.8.0_402-402 on DESKTOP-TCG6FB3 with PID 2728 (D:\x\mqtt2kafka\target\classes started by LiuYa in D:\x\mqtt2kafka)
+2024-04-02 23:05:16.171 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-02 23:05:17.089 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2024-04-02 23:05:17.109 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2024-04-02 23:05:17.221 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=3d944a91-0dc5-386a-b9d7-bb23502a6aae
+2024-04-02 23:05:17.767 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+2024-04-02 23:05:17.777 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2024-04-02 23:05:17.780 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-02 23:05:17.781 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2024-04-02 23:05:17.927 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-02 23:05:17.927 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1690 ms
+2024-04-02 23:05:18.059 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-04-02 23:05:18.081 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-02 23:06:23.451 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - Starting IotgatewayMqttconsumerEspiotApplication using Java 1.8.0_402-402 on DESKTOP-TCG6FB3 with PID 6500 (D:\x\mqtt2kafka\target\classes started by LiuYa in D:\x\mqtt2kafka)
+2024-04-02 23:06:23.458 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-02 23:07:19.787 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - Starting IotgatewayMqttconsumerEspiotApplication using Java 1.8.0_402-402 on DESKTOP-TCG6FB3 with PID 6408 (D:\x\mqtt2kafka\target\classes started by LiuYa in D:\x\mqtt2kafka)
+2024-04-02 23:07:19.791 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-02 23:07:37.639 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - Starting IotgatewayMqttconsumerEspiotApplication using Java 1.8.0_402-402 on DESKTOP-TCG6FB3 with PID 1316 (D:\x\mqtt2kafka\target\classes started by LiuYa in D:\x\mqtt2kafka)
+2024-04-02 23:07:37.643 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-02 23:07:38.809 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2024-04-02 23:07:38.837 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2024-04-02 23:07:38.989 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=3d944a91-0dc5-386a-b9d7-bb23502a6aae
+2024-04-02 23:07:39.596 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 0 (http)
+2024-04-02 23:07:39.604 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2024-04-02 23:07:39.606 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-02 23:07:39.606 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+2024-04-02 23:07:39.766 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-02 23:07:39.766 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2048 ms
+2024-04-02 23:07:40.631 [main] INFO  com.liuyang.mqtt2kafka.config.MqttConfig - =====================
+2024-04-02 23:07:41.241 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 23:07:42.120 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"temperature": "27", "source_device": "esp0002", "humidity": "74", "target_device": "server", "msg_type": "ReportTempHumi"}
+2024-04-02 23:07:42.298 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-04-02 23:07:42.775 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0004", "msg_type": "ReportDistance", "distance": "346.82", "target_device": "server"}
+2024-04-02 23:07:42.910 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2024-04-02 23:07:42.910 [main] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'Mqtt2Kafka.errorChannel' has 1 subscriber(s).
+2024-04-02 23:07:42.911 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2024-04-02 23:07:42.917 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2024-04-02 23:07:42.946 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 62807 (http) with context path ''
+2024-04-02 23:07:42.948 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 62807
+2024-04-02 23:07:42.957 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-04-02 23:07:43.054 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-04-02 23:07:43.059 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-04-02 23:07:43.087 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-04-02 23:07:43.087 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-04-02 23:07:43.087 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-04-02 23:07:43.087 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2024-04-02 23:07:43.087 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-04-02 23:07:43.087 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-04-02 23:07:43.088 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-04-02 23:07:43.738 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2024-04-02 23:07:43.741 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-04-02 23:07:43.744 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-02 23:07:43.751 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1712070463749 with initial instances count: 3
+2024-04-02 23:07:43.754 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application MQTT2KAFKA with eureka with status UP
+2024-04-02 23:07:43.755 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1712070463755, current=UP, previous=STARTING]
+2024-04-02 23:07:43.757 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MQTT2KAFKA/Mqtt2Kafka: registering service...
+2024-04-02 23:07:43.826 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MQTT2KAFKA/Mqtt2Kafka - registration status: 204
+2024-04-02 23:07:43.965 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 23:07:44.018 [main] INFO  c.l.m.IotgatewayMqttconsumerEspiotApplication - Started IotgatewayMqttconsumerEspiotApplication in 7.731 seconds (JVM running for 8.646)
+2024-04-02 23:07:45.912 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"temperature": "27", "source_device": "esp0002", "humidity": "74", "target_device": "server", "msg_type": "ReportTempHumi"}
+2024-04-02 23:07:46.000 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0004", "msg_type": "ReportDistance", "distance": "346.17", "target_device": "server"}
+2024-04-02 23:07:47.210 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0003", "msg_type": "ReportHumanExists", "humanExists": "0", "target_device": "server"}
+2024-04-02 23:07:48.787 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application MQTT2KAFKA with eureka with status DOWN
+2024-04-02 23:07:48.787 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1712070468787, current=DOWN, previous=UP]
+2024-04-02 23:07:48.787 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MQTT2KAFKA/Mqtt2Kafka: registering service...
+2024-04-02 23:07:48.934 [SpringApplicationShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2024-04-02 23:07:48.934 [SpringApplicationShutdownHook] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'Mqtt2Kafka.errorChannel' has 0 subscriber(s).
+2024-04-02 23:07:48.935 [SpringApplicationShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2024-04-02 23:07:48.942 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-04-02 23:07:49.123 [MQTT Call: Mqtt2Kafka] INFO  c.l.m.config.CustomMqttMessageListenerImpl - espiot:{"source_device": "esp0004", "msg_type": "ReportDistance", "distance": "348.67", "target_device": "server"}
+2024-04-02 23:07:49.124 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MQTT2KAFKA/Mqtt2Kafka - registration status: 204
+2024-04-02 23:07:49.126 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-04-02 23:07:49.133 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_MQTT2KAFKA/Mqtt2Kafka - deregister  status: 200
+2024-04-02 23:07:49.137 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
